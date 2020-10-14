@@ -9,7 +9,7 @@
     "build-docs": "typedoc --theme markdown --mdHideSources --out docs --includes ./src",
     "clean": "rm -rf dist",
     "lint": "tslint -p . -c tslint.json 'src/**/*.ts'",
-    "test": "mocha"
+    "test": "npm run build && mocha"
   },
   "files": [
     "dist",
